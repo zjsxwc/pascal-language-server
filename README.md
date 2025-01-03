@@ -1,6 +1,7 @@
 
-1.先在lazarus的package里open package file(.lpk) 分别打开这个项目目录下的src/serverprotocol/lspserver.lpk 、src/protocol/lspprotocol.lpk， 分别编译这2个lpk，
-2.修改 src/serverprotocol/PasLS.References.pas  文件里uses语句的 `  LazFileUtils, AVL_Tree,  ` 为 `  LazFileUtils, Laz_AVL_Tree,//AVL_Tree,  ` 来兼容新版本的lazarus
+1.先在lazarus的package里open package file(.lpk) 分别打开这个项目目录下的src/serverprotocol/lspserver.lpk 、src/protocol/lspprotocol.lpk， 分别编译这2个lpk。
+
+2.修改 src/serverprotocol/PasLS.References.pas  文件里uses语句的 `  LazFileUtils, AVL_Tree,  ` 为 `  LazFileUtils, Laz_AVL_Tree,//AVL_Tree,  ` 来兼容新版本的lazarus。
 
 
 # Pascal Language Server
