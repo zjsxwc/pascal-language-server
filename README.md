@@ -3,6 +3,23 @@
 
 2.修改 src/serverprotocol/PasLS.References.pas  文件里uses语句的 `  LazFileUtils, AVL_Tree,  ` 为 `  LazFileUtils, Laz_AVL_Tree,//AVL_Tree,  ` 来兼容新版本的lazarus。
 
+3.下载https://github.com/genericptr/pasls-vscode的.vsix插件安装到vscode。
+
+vscode插件配置
+ls ~/.config/Code\ -\ OSS/User/settings.json
+
+~/.config/Code - OSS/User/settings.json
+
+```
+    "pascalLanguageServer.env.FPCDIR": "/usr/lib/fpc/src",
+    "pascalLanguageServer.env.FPCTARGET": "linux",
+    "pascalLanguageServer.env.FPCTARGETCPU": "x86_64",
+    "pascalLanguageServer.env.LAZARUSDIR": "/usr/lib/lazarus",
+    "pascalLanguageServer.env.PP": "/usr/bin/fpc",
+    "pascalLanguageServer.executable": "/home/wangchao/.local/bin/pasls",
+    "pascalLanguageServer.initializationOptions.checkSyntax": true,
+    "pascalLanguageServer.initializationOptions.workspaceSymbols": true
+```
 
 # Pascal Language Server
 
